@@ -16,5 +16,11 @@ namespace tour_agency
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            InfTourForm form = new InfTourForm();
+            form.Show();
+        }
     }
 }

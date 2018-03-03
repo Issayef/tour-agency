@@ -47,6 +47,7 @@
             this.listBoxTimeEx = new System.Windows.Forms.ListBox();
             this.labelTextHotel = new System.Windows.Forms.Label();
             this.labelTextEx = new System.Windows.Forms.Label();
+            this.comboCostBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(34, 123);
+            this.label4.Location = new System.Drawing.Point(33, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 19);
             this.label4.TabIndex = 3;
@@ -96,6 +97,7 @@
             this.comboBoxCountry.Name = "comboBoxCountry";
             this.comboBoxCountry.Size = new System.Drawing.Size(167, 23);
             this.comboBoxCountry.TabIndex = 4;
+            this.comboBoxCountry.SelectedIndexChanged += new System.EventHandler(this.comboBoxCountry_SelectedIndexChanged);
             // 
             // comboBoxCity
             // 
@@ -104,20 +106,22 @@
             this.comboBoxCity.Name = "comboBoxCity";
             this.comboBoxCity.Size = new System.Drawing.Size(167, 23);
             this.comboBoxCity.TabIndex = 5;
+            this.comboBoxCity.SelectedIndexChanged += new System.EventHandler(this.comboBoxCity_SelectedIndexChanged);
             // 
             // comboBoxHotel
             // 
             this.comboBoxHotel.FormattingEnabled = true;
-            this.comboBoxHotel.Location = new System.Drawing.Point(93, 120);
+            this.comboBoxHotel.Location = new System.Drawing.Point(92, 182);
             this.comboBoxHotel.Name = "comboBoxHotel";
             this.comboBoxHotel.Size = new System.Drawing.Size(167, 23);
             this.comboBoxHotel.TabIndex = 6;
+            this.comboBoxHotel.SelectedIndexChanged += new System.EventHandler(this.comboBoxHotel_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(290, 123);
+            this.label5.Location = new System.Drawing.Point(390, 124);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 19);
             this.label5.TabIndex = 7;
@@ -126,16 +130,17 @@
             // comboBoxEx
             // 
             this.comboBoxEx.FormattingEnabled = true;
-            this.comboBoxEx.Location = new System.Drawing.Point(378, 119);
+            this.comboBoxEx.Location = new System.Drawing.Point(494, 119);
             this.comboBoxEx.Name = "comboBoxEx";
             this.comboBoxEx.Size = new System.Drawing.Size(161, 23);
             this.comboBoxEx.TabIndex = 8;
+            this.comboBoxEx.SelectedIndexChanged += new System.EventHandler(this.comboBoxEx_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(1, 173);
+            this.label6.Location = new System.Drawing.Point(1, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 19);
             this.label6.TabIndex = 9;
@@ -145,7 +150,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(6, 214);
+            this.label7.Location = new System.Drawing.Point(6, 256);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 19);
             this.label7.TabIndex = 10;
@@ -155,7 +160,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(286, 173);
+            this.label8.Location = new System.Drawing.Point(390, 173);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 19);
             this.label8.TabIndex = 11;
@@ -165,7 +170,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(318, 213);
+            this.label9.Location = new System.Drawing.Point(418, 213);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 19);
             this.label9.TabIndex = 12;
@@ -175,7 +180,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(291, 249);
+            this.label10.Location = new System.Drawing.Point(395, 250);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 19);
             this.label10.TabIndex = 13;
@@ -185,7 +190,7 @@
             // 
             this.listBoxCostHotel.FormattingEnabled = true;
             this.listBoxCostHotel.ItemHeight = 15;
-            this.listBoxCostHotel.Location = new System.Drawing.Point(93, 173);
+            this.listBoxCostHotel.Location = new System.Drawing.Point(93, 215);
             this.listBoxCostHotel.Name = "listBoxCostHotel";
             this.listBoxCostHotel.Size = new System.Drawing.Size(167, 19);
             this.listBoxCostHotel.TabIndex = 14;
@@ -194,7 +199,7 @@
             // 
             this.listBoxCostEx.FormattingEnabled = true;
             this.listBoxCostEx.ItemHeight = 15;
-            this.listBoxCostEx.Location = new System.Drawing.Point(378, 173);
+            this.listBoxCostEx.Location = new System.Drawing.Point(494, 173);
             this.listBoxCostEx.Name = "listBoxCostEx";
             this.listBoxCostEx.Size = new System.Drawing.Size(161, 19);
             this.listBoxCostEx.TabIndex = 16;
@@ -203,7 +208,7 @@
             // 
             this.listBoxTimeEx.FormattingEnabled = true;
             this.listBoxTimeEx.ItemHeight = 15;
-            this.listBoxTimeEx.Location = new System.Drawing.Point(378, 213);
+            this.listBoxTimeEx.Location = new System.Drawing.Point(494, 213);
             this.listBoxTimeEx.Name = "listBoxTimeEx";
             this.listBoxTimeEx.Size = new System.Drawing.Size(161, 19);
             this.listBoxTimeEx.TabIndex = 17;
@@ -211,7 +216,7 @@
             // labelTextHotel
             // 
             this.labelTextHotel.AutoSize = true;
-            this.labelTextHotel.Location = new System.Drawing.Point(93, 217);
+            this.labelTextHotel.Location = new System.Drawing.Point(93, 259);
             this.labelTextHotel.Name = "labelTextHotel";
             this.labelTextHotel.Size = new System.Drawing.Size(26, 15);
             this.labelTextHotel.TabIndex = 18;
@@ -220,17 +225,33 @@
             // labelTextEx
             // 
             this.labelTextEx.AutoSize = true;
-            this.labelTextEx.Location = new System.Drawing.Point(391, 252);
+            this.labelTextEx.Location = new System.Drawing.Point(491, 253);
             this.labelTextEx.Name = "labelTextEx";
             this.labelTextEx.Size = new System.Drawing.Size(26, 15);
             this.labelTextEx.TabIndex = 19;
             this.labelTextEx.Text = "text";
             // 
+            // comboCostBox
+            // 
+            this.comboCostBox.FormattingEnabled = true;
+            this.comboCostBox.Items.AddRange(new object[] {
+            "1000",
+            "2000",
+            "3000",
+            "4000",
+            "5000"});
+            this.comboCostBox.Location = new System.Drawing.Point(93, 138);
+            this.comboCostBox.Name = "comboCostBox";
+            this.comboCostBox.Size = new System.Drawing.Size(166, 23);
+            this.comboCostBox.TabIndex = 20;
+            this.comboCostBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // InfTourForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 360);
+            this.ClientSize = new System.Drawing.Size(755, 377);
+            this.Controls.Add(this.comboCostBox);
             this.Controls.Add(this.labelTextEx);
             this.Controls.Add(this.labelTextHotel);
             this.Controls.Add(this.listBoxTimeEx);
@@ -279,5 +300,6 @@
         private System.Windows.Forms.ListBox listBoxTimeEx;
         private System.Windows.Forms.Label labelTextHotel;
         private System.Windows.Forms.Label labelTextEx;
+        private System.Windows.Forms.ComboBox comboCostBox;
     }
 }
