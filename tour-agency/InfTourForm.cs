@@ -13,13 +13,17 @@ namespace tour_agency
 {
     public partial class InfTourForm : Form
     {
+        public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Lenaconnection = "";
+        public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-    
+        public string conString = Alexconnection;
+
         public void CreateCountry()
         {
             SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-
+            myCon.ConnectionString = conString;
             string сmd;
             сmd = "Select CountryName From Country Order by CountryName";
             SqlCommand myCommand = new SqlCommand(сmd, myCon);
@@ -39,8 +43,7 @@ namespace tour_agency
         public void CreateCity(string coname)
         {
             SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-
+            myCon.ConnectionString = conString;
             string сmd;
             сmd = "Select a.CityName From City a, Country b Where b.CountryName LIKE '" + coname + "' and a.CountryID=b.CountryID Order by a.CityName";
             SqlCommand myCommand = new SqlCommand(сmd, myCon);
@@ -60,7 +63,7 @@ namespace tour_agency
         public void CreateHotel(string ciname, string cost)
         {
             SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+            myCon.ConnectionString = conString;
             string сmd;
             сmd = "Select h.HotelName From HotelInfa h, City c Where c.CityName LIKE '" + ciname + "'and c.CityID=h.CityID and h.NightlyRate <= '" + cost + "' Order by h.HotelName";
             SqlCommand myCommand = new SqlCommand(сmd, myCon);
@@ -80,8 +83,7 @@ namespace tour_agency
         public void CreateHotelInf(string hname)
         {
             SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-
+            myCon.ConnectionString = conString;
             string сmd;
             сmd = "Select HotDescription, NightlyRate  From HotelInfa Where HotelName LIKE '" + hname + "'";
             SqlCommand myCommand = new SqlCommand(сmd, myCon);
@@ -104,8 +106,7 @@ namespace tour_agency
         public void CreateExcursion(string ciname)
         {
             SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-
+            myCon.ConnectionString = conString;
             string сmd;
             сmd = "Select e.EksName From Excursion e, City c Where c.CityName LIKE '" + ciname + "'and c.CityID=e.CityID Order by e.EksName";
             SqlCommand myCommand = new SqlCommand(сmd, myCon);
@@ -125,8 +126,7 @@ namespace tour_agency
         public void CreateExInf(string ename)
         {
             SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-
+            myCon.ConnectionString = conString;
             string сmd;
             сmd = "Select EksPrice, EksDescription, EksTime_hours From Excursion Where EksName LIKE '" + ename + "'";
             SqlCommand myCommand = new SqlCommand(сmd, myCon);
@@ -174,6 +174,14 @@ namespace tour_agency
             listBoxCostHotel.Items.Clear();
             comboBoxHotel.Items.Clear();
             comboBoxHotel.Text = "";
+            comboCostBox.Text = "";
+        }
+        public void RefreshHotel_2()
+        {
+            labelTextHotel.Text = "";
+            listBoxCostHotel.Items.Clear();
+            comboBoxHotel.Items.Clear();
+            comboBoxHotel.Text = "";
             CreateHotel(comboBoxCity.SelectedItem.ToString(), comboCostBox.SelectedItem.ToString());
         }
         public void RefreshHotelInf()
@@ -211,7 +219,7 @@ namespace tour_agency
 
         private void comboBoxCity_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // RefreshHotel();
+            RefreshHotel();
             RefreshEx();
         }
 
@@ -225,9 +233,14 @@ namespace tour_agency
             RefreshExInf();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboCostBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RefreshHotel();
+            RefreshHotel_2();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

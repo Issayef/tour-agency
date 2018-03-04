@@ -21,6 +21,7 @@ namespace tour_agency
         {
             InfTourForm form = new InfTourForm();
             form.Show();
+            this.Hide();
         }
     }
 }

@@ -16,7 +16,14 @@ namespace tour_agency
         DataSet ds;
         SqlDataAdapter adapter;
         SqlCommandBuilder commandBuilder;
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Lenaconnection = "";
+        public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+
+        public static string conString = Alexconnection;
+
+        string connectionString = conString;
         string sql = "SELECT FIO, date_of_birth, phone, pasport_number FROM turist ORDER BY FIO";
 
         public ClientBase()
@@ -32,12 +39,10 @@ namespace tour_agency
 
                     ds = new DataSet();
                     adapter.Fill(ds);
-                    dataGridView1.DataSource = ds.Tables[0];
-                    
+                    dataGridView1.DataSource = ds.Tables[0];    
                 }
 
-            
-                       }
+        }
                      
         
     private void button1_Click(object sender, EventArgs e)

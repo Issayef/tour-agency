@@ -18,10 +18,16 @@ namespace tour_agency
             InitializeComponent();
         }
         public string pas;
+        public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Lenaconnection = "";
+        public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+
+        public string conString = Alexconnection;
         public void Password(string login)
         {
             SqlConnection Connection = new SqlConnection();
-            Connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+            Connection.ConnectionString = conString;
             string request = "Select Password From Registration Where Name = '" + login + "'";
             SqlCommand Command = new SqlCommand(request, Connection);
             Connection.Open();
@@ -39,6 +45,7 @@ namespace tour_agency
             {
                 MenuForm form = new MenuForm();
                 form.Show();
+                this.Hide();
             }
             else { 
                 labelError.Text = "Ошибка введенных данных";
