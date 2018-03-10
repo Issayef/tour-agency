@@ -21,7 +21,7 @@ namespace tour_agency
         public static string Lenaconnection = "";
         public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-        public static string conString = Alexconnection;
+        public static string conString = Bianaconnection;
 
         string connectionString = conString;
         string sql = "SELECT FIO, date_of_birth, phone, pasport_number FROM turist ORDER BY FIO";
@@ -49,12 +49,6 @@ namespace tour_agency
         {
             Contract contract = new Contract();
             contract.Show();
-        }
-
-        private void add_button_Click(object sender, EventArgs e)
-        {
-            DataRow row = ds.Tables[0].NewRow(); 
-            ds.Tables[0].Rows.Add(row);
         }
 
         private void save_button_Click(object sender, EventArgs e)
