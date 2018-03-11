@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace tour_agency
 {
+    
     class Country
     {
         public string countryname;
@@ -27,7 +28,18 @@ namespace tour_agency
         public string exdescription;
         public int extime;
     }
-
+    class Manager
+    {
+        public string name;
+    }
+    class Tourist
+    {
+        public string touristname;
+    }
+    class Status
+    {
+        public string status;
+    }
     class CountryList
     {
         public static List<Country> countries;
