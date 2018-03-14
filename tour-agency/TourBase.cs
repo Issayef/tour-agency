@@ -7,7 +7,7 @@ namespace tour_agency
 {
     public partial class TourBase : Form
     {
-        public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Lenaconnection = "";
         public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
@@ -97,46 +97,44 @@ namespace tour_agency
             InitializeComponent();
             CreateManager();
         }
-        public void RefreshTourist()
+         private void comboBoxManager_SelectedIndexChanged(object sender, EventArgs e)
         {
+            comboBoxTourist.Items.Clear();
+            comboBoxTourist.Text = "";
+            comboBoxContract.Items.Clear();
+            comboBoxContract.Text = "";
+            textBoxStatus.Text = "";
             CreateTourist(comboBoxManager.SelectedItem.ToString());
-        }
-        public void RefreshContract()
-        {
-           CreateContract(comboBoxTourist.SelectedItem.ToString());
-        }
-        public void RefreshStatus()
-        {
-            CreateStatus(Convert.ToInt32(comboBoxContract.SelectedItem.ToString()));
-        }
-        class Contract
-        {
-            public int number;
-        }
-
-        private void comboBoxManager_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            RefreshTourist();
         }
 
         private void comboBoxTourist_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RefreshContract();
+            comboBoxContract.Items.Clear();
+            comboBoxContract.Text = "";
+            textBoxStatus.Text = "";
+            CreateContract(comboBoxTourist.SelectedItem.ToString());
         }
 
         private void comboBoxContract_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RefreshStatus();
+            textBoxStatus.Text = "";
+            CreateStatus(Convert.ToInt32(comboBoxContract.SelectedItem.ToString()));
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
          
+
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }      
+        }
+
+        class Contract
+        {
+            public int number;
+        }
     }
 }
