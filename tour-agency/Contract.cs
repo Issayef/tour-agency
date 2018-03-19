@@ -41,5 +41,10 @@ namespace tour_agency
         {
 
         }
+
+        private void Contract_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

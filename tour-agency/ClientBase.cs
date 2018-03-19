@@ -18,10 +18,10 @@ namespace tour_agency
         SqlCommandBuilder commandBuilder;
         public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-        public static string Lenaconnection = "";
+        public static string Lenaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\пк\Documents\Lena\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-        public static string conString = Bianaconnection;
+        public static string conString = Lenaconnection;
 
         string connectionString = conString;
         string sql = "SELECT FIO, date_of_birth, phone, pasport_number FROM turist ORDER BY FIO";

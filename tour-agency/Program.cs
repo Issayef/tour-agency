@@ -16,7 +16,7 @@ namespace tour_agency
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TourBase());
+            Application.Run(new RegistrationForm());
         }
     }
 }

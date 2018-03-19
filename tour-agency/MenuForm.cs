@@ -23,5 +23,12 @@ namespace tour_agency
             form.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TourBase form = new TourBase();
+            form.Show();
+            this.Hide();
+        }
     }
 }

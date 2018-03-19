@@ -9,10 +9,10 @@ namespace tour_agency
     {
         public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
-        public static string Lenaconnection = "";
+        public static string Lenaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\пк\Documents\Lena\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-        public string conString = Bianaconnection;
+        public string conString = Lenaconnection;
 
         public void CreateManager()
         {
@@ -123,8 +123,16 @@ namespace tour_agency
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-         
-
+            SqlConnection myCon = new SqlConnection();
+            myCon.ConnectionString = conString;
+            string cmd = "UPDATE contract_table SET id_status = (SELECT status_id FROM status_classification WHERE status LIKE '" + comboBoxStatus.SelectedItem.ToString() + "' ) where contract_id LIKE '" + comboBoxContract.SelectedItem.ToString() + "' ";
+            SqlCommand myCommand = new SqlCommand(cmd, myCon);
+            myCon.Open();
+            if (myCommand.ExecuteNonQuery() == 1)
+              {
+                CreateStatus(Convert.ToInt32(comboBoxContract.SelectedItem.ToString()));
+              }
+            myCon.Close();
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
