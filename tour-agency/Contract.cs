@@ -1,26 +1,76 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.IO;
 using Word = Microsoft.Office.Interop.Word;
 
-namespace tour_agency
+
+namespace Manager
 {
     public partial class Contract : Form
     {
+
         private readonly string TemplateFileName = @"D:\Prilozhenie_1.docx";//путь к файлу
         private string spath = @"D:\"+"Dogovor"+ DateTime.Now.ToString("yyyy-MM-dd HHmmss") + ".docx";
         //private string spath = @"D:\" + "Dogovor"+".docx";
+
 
         public Contract()
         {
             InitializeComponent();
         }
+
+        public void Information()
+        {
+            DateTime data = DateTime.Now;
+            SqlConnection myCon = new SqlConnection();
+            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+
+            SqlCommand cmt = new SqlCommand();
+            cmt.CommandType = CommandType.Text;
+            cmt.CommandText = "Insert into contract_table (fio,contract_date, manager_id) Values('" + textBoxFIO.Text + "', '" + data + "', '" + ManagerTextBox.Text + "'); ";
+            cmt.Connection = myCon;
+
+            SqlCommand ps = new SqlCommand();
+            ps.CommandType = CommandType.Text;
+            ps.CommandText = "Insert into passport_inf (pas_numb, country_code, sex, country, date_of_issue, expriation_date, issued_by) Values('" + PassportNumberTextBox.Text + "', '" + textBoxCountryCode.Text + "', '" + SexTextBox.Text + "', '" + CountryTextBox.Text + "','" + DataVidachyTextBox.Text + "','" + textBoxExpDate.Text + "', '" + KemVidanTextBox.Text + "' ); ";
+            ps.Connection = myCon;
+
+            SqlCommand fl = new SqlCommand();
+            fl.CommandType = CommandType.Text;
+            fl.CommandText = "Insert into flight_inf (airoport_mov_name, airoport_arr_name, date_mov,time_mov, time_arr) Values('" + AirportDepTextBox.Text + "', '" + AirportArrTextBox.Text + "', '" + DateDepTextBox.Text + "', '" + TimeDepTextBox.Text + "','" + TimeArrTextBox.Text + "' ); ";
+            fl.Connection = myCon;
+
+            SqlCommand tu = new SqlCommand();
+            tu.CommandType = CommandType.Text;
+            tu.CommandText = "Insert into turist (FIO, date_of_birth, pasport_number, phone) Values('" + textBoxFIO.Text + "', '" + BirthTextBox.Text + "', '" + PassportNumberTextBox.Text + "', '" + PhoneTextBox.Text + "' ); ";
+            tu.Connection = myCon;
+
+            SqlCommand it = new SqlCommand();
+            it.CommandType = CommandType.Text;
+            it.CommandText = "Insert into tour_inf (date_of_moving, date_of_arrival, visit_country, visit_resort, hotel_stars, nutrion, number_of_adults, number_of_children, coastline) Values('" + TourBeginTextBox.Text + "', '" + TourEndTextBox.Text + "', '" + CountryTourTextBox.Text + "', '" + CityTextBox.Text + "', '" + HotelStarTextBox.Text + "', '" + FoodTextBox.Text + "', '" + textBoxAdults.Text + "', '" + textBoxChildren.Text + "', '" + CoastlineTextBox.Text + "');";
+            it.Connection = myCon;
+
+            myCon.Open();
+            try
+            {
+                cmt.ExecuteNonQuery();
+                ps.ExecuteNonQuery();
+                fl.ExecuteNonQuery();
+                tu.ExecuteNonQuery();
+                it.ExecuteNonQuery();
+                DialogResult result = MessageBox.Show("Сохранение прошло успешно.", "Сохранение", MessageBoxButtons.OK);
+            }
+            catch { DialogResult result = MessageBox.Show("Не удалось сохранить. Проверьте данные. Например: формат даты", "Сохранение", MessageBoxButtons.OK); }
+            myCon.Close();
+        }
+       
+        private void buttonSaveBD_Click(object sender, EventArgs e)
+        {
+            Information();
+        }
+             
 
         #region Метод замены ключевых слов на данные
         /// <summary>
@@ -42,7 +92,7 @@ namespace tour_agency
             #region Переменные для хранения данных
             var lastname = LastnameTextBox.Text;//фио 
             var firsttname = FirstnameTextBox.Text;//фио 
-            var ottname = OtnameTextBox.Text;//фио 
+            var ottname = textBoxFIO.Text;//фио 
             var birthYear = BirthTextBox.Text;//дата рождения
             var sex = SexTextBox.Text;//пол
             var phone = PhoneTextBox.Text;//телефон
@@ -130,6 +180,6 @@ namespace tour_agency
             }
         }
 
-       
+        
     }
 }

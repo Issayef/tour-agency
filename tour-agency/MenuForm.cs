@@ -17,18 +17,43 @@ namespace tour_agency
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //нет формы надо добавить
+            InfTourForm form = new InfTourForm();
+            form.Show();
+        }
+
         private void button2_Click(object sender, EventArgs e)
+        {
+            ClientBase form = new ClientBase();
+            form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             InfTourForm form = new InfTourForm();
             form.Show();
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void button4_Click(object sender, EventArgs e)
         {
-            TourBase form = new TourBase();
+           Contract form = new Contract ();
             form.Show();
-            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            StatisticForm form = new StatisticForm();
+            form.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            RegistrationForm form = new RegistrationForm();
+            form.Show();
         }
     }
 }
