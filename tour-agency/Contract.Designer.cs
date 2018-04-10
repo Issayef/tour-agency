@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LastnameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,34 +38,34 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.BirthTextBox = new System.Windows.Forms.TextBox();
+            this.OtnameTextBox = new System.Windows.Forms.TextBox();
+            this.FirstnameTextBox = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.PassportNumberTextBox = new System.Windows.Forms.TextBox();
+            this.PhoneTextBox = new System.Windows.Forms.TextBox();
+            this.SexTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.KemVidanTextBox = new System.Windows.Forms.TextBox();
+            this.DataVidachyTextBox = new System.Windows.Forms.TextBox();
+            this.CountryTextBox = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.TourBeginTextBox = new System.Windows.Forms.TextBox();
+            this.TourEndTextBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.FoodTextBox = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.CoastlineTextBox = new System.Windows.Forms.TextBox();
+            this.CityTextBox = new System.Windows.Forms.TextBox();
+            this.HotelTextBox = new System.Windows.Forms.TextBox();
+            this.HotelStarTextBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -73,31 +73,33 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.CountryTourTextBox = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.TimeTravelTextBox = new System.Windows.Forms.TextBox();
+            this.AirportArrTextBox = new System.Windows.Forms.TextBox();
+            this.DateDepTextBox = new System.Windows.Forms.TextBox();
+            this.TimeDepTextBox = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.AirportDepTextBox = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ManagerTextBox = new System.Windows.Forms.TextBox();
+            this.SaveWordButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.TimeArrTextBox = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // LastnameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 38);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 22);
-            this.textBox1.TabIndex = 0;
+            this.LastnameTextBox.Location = new System.Drawing.Point(156, 38);
+            this.LastnameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.LastnameTextBox.Name = "LastnameTextBox";
+            this.LastnameTextBox.Size = new System.Drawing.Size(148, 22);
+            this.LastnameTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -109,7 +111,6 @@
             this.label1.Size = new System.Drawing.Size(129, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Данные клиента";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -121,7 +122,6 @@
             this.label2.Size = new System.Drawing.Size(103, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Данные тура";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -152,7 +152,6 @@
             this.label5.Size = new System.Drawing.Size(71, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "Отчество";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -183,7 +182,6 @@
             this.label8.Size = new System.Drawing.Size(82, 16);
             this.label8.TabIndex = 8;
             this.label8.Text = "Код страны";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -195,29 +193,29 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Телефон";
             // 
-            // textBox2
+            // BirthTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 128);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 22);
-            this.textBox2.TabIndex = 10;
+            this.BirthTextBox.Location = new System.Drawing.Point(156, 128);
+            this.BirthTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.BirthTextBox.Name = "BirthTextBox";
+            this.BirthTextBox.Size = new System.Drawing.Size(148, 22);
+            this.BirthTextBox.TabIndex = 10;
             // 
-            // textBox3
+            // OtnameTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 98);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 22);
-            this.textBox3.TabIndex = 11;
+            this.OtnameTextBox.Location = new System.Drawing.Point(156, 98);
+            this.OtnameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.OtnameTextBox.Name = "OtnameTextBox";
+            this.OtnameTextBox.Size = new System.Drawing.Size(148, 22);
+            this.OtnameTextBox.TabIndex = 11;
             // 
-            // textBox4
+            // FirstnameTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 68);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 22);
-            this.textBox4.TabIndex = 12;
+            this.FirstnameTextBox.Location = new System.Drawing.Point(156, 68);
+            this.FirstnameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.FirstnameTextBox.Name = "FirstnameTextBox";
+            this.FirstnameTextBox.Size = new System.Drawing.Size(148, 22);
+            this.FirstnameTextBox.TabIndex = 12;
             // 
             // textBox5
             // 
@@ -227,29 +225,29 @@
             this.textBox5.Size = new System.Drawing.Size(148, 22);
             this.textBox5.TabIndex = 13;
             // 
-            // textBox6
+            // PassportNumberTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(156, 218);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 22);
-            this.textBox6.TabIndex = 14;
+            this.PassportNumberTextBox.Location = new System.Drawing.Point(156, 218);
+            this.PassportNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PassportNumberTextBox.Name = "PassportNumberTextBox";
+            this.PassportNumberTextBox.Size = new System.Drawing.Size(148, 22);
+            this.PassportNumberTextBox.TabIndex = 14;
             // 
-            // textBox7
+            // PhoneTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(156, 188);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(148, 22);
-            this.textBox7.TabIndex = 15;
+            this.PhoneTextBox.Location = new System.Drawing.Point(156, 188);
+            this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneTextBox.Name = "PhoneTextBox";
+            this.PhoneTextBox.Size = new System.Drawing.Size(148, 22);
+            this.PhoneTextBox.TabIndex = 15;
             // 
-            // textBox8
+            // SexTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(156, 158);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(148, 22);
-            this.textBox8.TabIndex = 16;
+            this.SexTextBox.Location = new System.Drawing.Point(156, 158);
+            this.SexTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SexTextBox.Name = "SexTextBox";
+            this.SexTextBox.Size = new System.Drawing.Size(148, 22);
+            this.SexTextBox.TabIndex = 16;
             // 
             // label10
             // 
@@ -260,7 +258,6 @@
             this.label10.Size = new System.Drawing.Size(34, 16);
             this.label10.TabIndex = 17;
             this.label10.Text = "Пол";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -302,29 +299,29 @@
             this.label14.TabIndex = 21;
             this.label14.Text = "Дата выдачи";
             // 
-            // textBox9
+            // KemVidanTextBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(156, 338);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 22);
-            this.textBox9.TabIndex = 22;
+            this.KemVidanTextBox.Location = new System.Drawing.Point(156, 338);
+            this.KemVidanTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.KemVidanTextBox.Name = "KemVidanTextBox";
+            this.KemVidanTextBox.Size = new System.Drawing.Size(148, 22);
+            this.KemVidanTextBox.TabIndex = 22;
             // 
-            // textBox10
+            // DataVidachyTextBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(156, 308);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(148, 22);
-            this.textBox10.TabIndex = 23;
+            this.DataVidachyTextBox.Location = new System.Drawing.Point(156, 308);
+            this.DataVidachyTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DataVidachyTextBox.Name = "DataVidachyTextBox";
+            this.DataVidachyTextBox.Size = new System.Drawing.Size(148, 22);
+            this.DataVidachyTextBox.TabIndex = 23;
             // 
-            // textBox11
+            // CountryTextBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(156, 278);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(148, 22);
-            this.textBox11.TabIndex = 24;
+            this.CountryTextBox.Location = new System.Drawing.Point(156, 278);
+            this.CountryTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CountryTextBox.Name = "CountryTextBox";
+            this.CountryTextBox.Size = new System.Drawing.Size(148, 22);
+            this.CountryTextBox.TabIndex = 24;
             // 
             // textBox12
             // 
@@ -334,21 +331,21 @@
             this.textBox12.Size = new System.Drawing.Size(148, 22);
             this.textBox12.TabIndex = 25;
             // 
-            // textBox13
+            // TourBeginTextBox
             // 
-            this.textBox13.Location = new System.Drawing.Point(513, 278);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(148, 22);
-            this.textBox13.TabIndex = 45;
+            this.TourBeginTextBox.Location = new System.Drawing.Point(513, 278);
+            this.TourBeginTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TourBeginTextBox.Name = "TourBeginTextBox";
+            this.TourBeginTextBox.Size = new System.Drawing.Size(148, 22);
+            this.TourBeginTextBox.TabIndex = 45;
             // 
-            // textBox14
+            // TourEndTextBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(513, 308);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(148, 22);
-            this.textBox14.TabIndex = 44;
+            this.TourEndTextBox.Location = new System.Drawing.Point(513, 308);
+            this.TourEndTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TourEndTextBox.Name = "TourEndTextBox";
+            this.TourEndTextBox.Size = new System.Drawing.Size(148, 22);
+            this.TourEndTextBox.TabIndex = 44;
             // 
             // label15
             // 
@@ -380,13 +377,13 @@
             this.label17.TabIndex = 41;
             this.label17.Text = "Питание";
             // 
-            // textBox15
+            // FoodTextBox
             // 
-            this.textBox15.Location = new System.Drawing.Point(513, 158);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(148, 22);
-            this.textBox15.TabIndex = 40;
+            this.FoodTextBox.Location = new System.Drawing.Point(513, 158);
+            this.FoodTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.FoodTextBox.Name = "FoodTextBox";
+            this.FoodTextBox.Size = new System.Drawing.Size(148, 22);
+            this.FoodTextBox.TabIndex = 40;
             // 
             // textBox16
             // 
@@ -404,37 +401,37 @@
             this.textBox17.Size = new System.Drawing.Size(148, 22);
             this.textBox17.TabIndex = 38;
             // 
-            // textBox18
+            // CoastlineTextBox
             // 
-            this.textBox18.Location = new System.Drawing.Point(513, 248);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(148, 22);
-            this.textBox18.TabIndex = 37;
+            this.CoastlineTextBox.Location = new System.Drawing.Point(513, 248);
+            this.CoastlineTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CoastlineTextBox.Name = "CoastlineTextBox";
+            this.CoastlineTextBox.Size = new System.Drawing.Size(148, 22);
+            this.CoastlineTextBox.TabIndex = 37;
             // 
-            // textBox19
+            // CityTextBox
             // 
-            this.textBox19.Location = new System.Drawing.Point(513, 68);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(148, 22);
-            this.textBox19.TabIndex = 36;
+            this.CityTextBox.Location = new System.Drawing.Point(513, 68);
+            this.CityTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CityTextBox.Name = "CityTextBox";
+            this.CityTextBox.Size = new System.Drawing.Size(148, 22);
+            this.CityTextBox.TabIndex = 36;
             // 
-            // textBox20
+            // HotelTextBox
             // 
-            this.textBox20.Location = new System.Drawing.Point(513, 98);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(148, 22);
-            this.textBox20.TabIndex = 35;
+            this.HotelTextBox.Location = new System.Drawing.Point(513, 98);
+            this.HotelTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.HotelTextBox.Name = "HotelTextBox";
+            this.HotelTextBox.Size = new System.Drawing.Size(148, 22);
+            this.HotelTextBox.TabIndex = 35;
             // 
-            // textBox21
+            // HotelStarTextBox
             // 
-            this.textBox21.Location = new System.Drawing.Point(513, 128);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(148, 22);
-            this.textBox21.TabIndex = 34;
+            this.HotelStarTextBox.Location = new System.Drawing.Point(513, 128);
+            this.HotelStarTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.HotelStarTextBox.Name = "HotelStarTextBox";
+            this.HotelStarTextBox.Size = new System.Drawing.Size(148, 22);
+            this.HotelStarTextBox.TabIndex = 34;
             // 
             // label18
             // 
@@ -506,13 +503,13 @@
             this.label24.TabIndex = 27;
             this.label24.Text = "Страна";
             // 
-            // textBox22
+            // CountryTourTextBox
             // 
-            this.textBox22.Location = new System.Drawing.Point(513, 38);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(148, 22);
-            this.textBox22.TabIndex = 26;
+            this.CountryTourTextBox.Location = new System.Drawing.Point(513, 38);
+            this.CountryTourTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CountryTourTextBox.Name = "CountryTourTextBox";
+            this.CountryTourTextBox.Size = new System.Drawing.Size(148, 22);
+            this.CountryTourTextBox.TabIndex = 26;
             // 
             // label25
             // 
@@ -529,43 +526,43 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.Location = new System.Drawing.Point(333, 494);
+            this.label26.Location = new System.Drawing.Point(333, 528);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(166, 16);
             this.label26.TabIndex = 56;
             this.label26.Text = "Длительность перелета";
             // 
-            // textBox23
+            // TimeTravelTextBox
             // 
-            this.textBox23.Location = new System.Drawing.Point(513, 491);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(148, 22);
-            this.textBox23.TabIndex = 55;
+            this.TimeTravelTextBox.Location = new System.Drawing.Point(513, 525);
+            this.TimeTravelTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TimeTravelTextBox.Name = "TimeTravelTextBox";
+            this.TimeTravelTextBox.Size = new System.Drawing.Size(148, 22);
+            this.TimeTravelTextBox.TabIndex = 55;
             // 
-            // textBox24
+            // AirportArrTextBox
             // 
-            this.textBox24.Location = new System.Drawing.Point(513, 401);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(148, 22);
-            this.textBox24.TabIndex = 54;
+            this.AirportArrTextBox.Location = new System.Drawing.Point(513, 401);
+            this.AirportArrTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.AirportArrTextBox.Name = "AirportArrTextBox";
+            this.AirportArrTextBox.Size = new System.Drawing.Size(148, 22);
+            this.AirportArrTextBox.TabIndex = 54;
             // 
-            // textBox25
+            // DateDepTextBox
             // 
-            this.textBox25.Location = new System.Drawing.Point(513, 431);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(148, 22);
-            this.textBox25.TabIndex = 53;
+            this.DateDepTextBox.Location = new System.Drawing.Point(513, 431);
+            this.DateDepTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DateDepTextBox.Name = "DateDepTextBox";
+            this.DateDepTextBox.Size = new System.Drawing.Size(148, 22);
+            this.DateDepTextBox.TabIndex = 53;
             // 
-            // textBox26
+            // TimeDepTextBox
             // 
-            this.textBox26.Location = new System.Drawing.Point(513, 461);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(148, 22);
-            this.textBox26.TabIndex = 52;
+            this.TimeDepTextBox.Location = new System.Drawing.Point(513, 461);
+            this.TimeDepTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TimeDepTextBox.Name = "TimeDepTextBox";
+            this.TimeDepTextBox.Size = new System.Drawing.Size(148, 22);
+            this.TimeDepTextBox.TabIndex = 52;
             // 
             // label27
             // 
@@ -607,85 +604,106 @@
             this.label30.TabIndex = 48;
             this.label30.Text = "Аэропорт вылета";
             // 
-            // textBox27
+            // AirportDepTextBox
             // 
-            this.textBox27.Location = new System.Drawing.Point(513, 371);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(148, 22);
-            this.textBox27.TabIndex = 47;
+            this.AirportDepTextBox.Location = new System.Drawing.Point(513, 371);
+            this.AirportDepTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.AirportDepTextBox.Name = "AirportDepTextBox";
+            this.AirportDepTextBox.Size = new System.Drawing.Size(148, 22);
+            this.AirportDepTextBox.TabIndex = 47;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label31.Location = new System.Drawing.Point(22, 543);
+            this.label31.Location = new System.Drawing.Point(27, 577);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(84, 16);
             this.label31.TabIndex = 57;
             this.label31.Text = "Менеджер";
             // 
-            // textBox28
+            // ManagerTextBox
             // 
-            this.textBox28.Location = new System.Drawing.Point(156, 540);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(148, 22);
-            this.textBox28.TabIndex = 58;
+            this.ManagerTextBox.Location = new System.Drawing.Point(161, 574);
+            this.ManagerTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ManagerTextBox.Name = "ManagerTextBox";
+            this.ManagerTextBox.Size = new System.Drawing.Size(148, 22);
+            this.ManagerTextBox.TabIndex = 58;
             // 
-            // button1
+            // SaveWordButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(365, 540);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 23);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "Сохранить как";
-            this.button1.UseVisualStyleBackColor = true;
+            this.SaveWordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveWordButton.Location = new System.Drawing.Point(370, 574);
+            this.SaveWordButton.Name = "SaveWordButton";
+            this.SaveWordButton.Size = new System.Drawing.Size(95, 23);
+            this.SaveWordButton.TabIndex = 59;
+            this.SaveWordButton.Text = "Сохранить как";
+            this.SaveWordButton.UseVisualStyleBackColor = true;
+            this.SaveWordButton.Click += new System.EventHandler(this.SaveWordButton_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(534, 540);
+            this.button2.Location = new System.Drawing.Point(539, 574);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 23);
             this.button2.TabIndex = 60;
             this.button2.Text = "Сохранить в базу";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // TimeArrTextBox
+            // 
+            this.TimeArrTextBox.Location = new System.Drawing.Point(513, 495);
+            this.TimeArrTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TimeArrTextBox.Name = "TimeArrTextBox";
+            this.TimeArrTextBox.Size = new System.Drawing.Size(148, 22);
+            this.TimeArrTextBox.TabIndex = 62;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label32.Location = new System.Drawing.Point(333, 501);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(107, 16);
+            this.label32.TabIndex = 61;
+            this.label32.Text = "Время прилета";
+            // 
             // Contract
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 589);
+            this.ClientSize = new System.Drawing.Size(689, 611);
+            this.Controls.Add(this.TimeArrTextBox);
+            this.Controls.Add(this.label32);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox28);
+            this.Controls.Add(this.SaveWordButton);
+            this.Controls.Add(this.ManagerTextBox);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.TimeTravelTextBox);
+            this.Controls.Add(this.AirportArrTextBox);
+            this.Controls.Add(this.DateDepTextBox);
+            this.Controls.Add(this.TimeDepTextBox);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.textBox27);
+            this.Controls.Add(this.AirportDepTextBox);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.TourBeginTextBox);
+            this.Controls.Add(this.TourEndTextBox);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.FoodTextBox);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.CoastlineTextBox);
+            this.Controls.Add(this.CityTextBox);
+            this.Controls.Add(this.HotelTextBox);
+            this.Controls.Add(this.HotelStarTextBox);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
@@ -693,23 +711,23 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.CountryTourTextBox);
             this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.CountryTextBox);
+            this.Controls.Add(this.DataVidachyTextBox);
+            this.Controls.Add(this.KemVidanTextBox);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.SexTextBox);
+            this.Controls.Add(this.PhoneTextBox);
+            this.Controls.Add(this.PassportNumberTextBox);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.FirstnameTextBox);
+            this.Controls.Add(this.OtnameTextBox);
+            this.Controls.Add(this.BirthTextBox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -719,12 +737,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.LastnameTextBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Contract";
             this.Text = "Contract";
-            this.Load += new System.EventHandler(this.Contract_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -732,7 +749,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox LastnameTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -742,34 +759,34 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox BirthTextBox;
+        private System.Windows.Forms.TextBox OtnameTextBox;
+        private System.Windows.Forms.TextBox FirstnameTextBox;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox PassportNumberTextBox;
+        private System.Windows.Forms.TextBox PhoneTextBox;
+        private System.Windows.Forms.TextBox SexTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox KemVidanTextBox;
+        private System.Windows.Forms.TextBox DataVidachyTextBox;
+        private System.Windows.Forms.TextBox CountryTextBox;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox TourBeginTextBox;
+        private System.Windows.Forms.TextBox TourEndTextBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox FoodTextBox;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox CoastlineTextBox;
+        private System.Windows.Forms.TextBox CityTextBox;
+        private System.Windows.Forms.TextBox HotelTextBox;
+        private System.Windows.Forms.TextBox HotelStarTextBox;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
@@ -777,21 +794,23 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox CountryTourTextBox;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox TimeTravelTextBox;
+        private System.Windows.Forms.TextBox AirportArrTextBox;
+        private System.Windows.Forms.TextBox DateDepTextBox;
+        private System.Windows.Forms.TextBox TimeDepTextBox;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox AirportDepTextBox;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ManagerTextBox;
+        private System.Windows.Forms.Button SaveWordButton;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TimeArrTextBox;
+        private System.Windows.Forms.Label label32;
     }
 }
