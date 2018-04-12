@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,9 +20,9 @@ namespace tour_agency
         public static string Bianaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\днс\Documents\учёба Биана\GitHub\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Alexconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\_курсач\БД\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Lenaconnection = "";
-        public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
+       public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-        public string conString = Bianaconnection;
+        public string conString = Alexconnection;
 
         public void SaveInformation()
         {
@@ -36,23 +36,29 @@ namespace tour_agency
             rvi.Connection = myCon;
 
             myCon.Open();
-            try
+           try
             {
                 rvi.ExecuteNonQuery();
                 DialogResult result = MessageBox.Show("Сохранение прошло успешно.", "Сохранение", MessageBoxButtons.OK);
             }
             catch { DialogResult result = MessageBox.Show("Не удалось сохранить", "Сохранение", MessageBoxButtons.OK); }
             myCon.Close();
-        }
+       }
 
-        private void buttonSave_Click(object sender, EventArgs e)
-        {
+       private void buttonSave_Click(object sender, EventArgs e)
+       {
             SaveInformation();
         }
-
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menu = new MenuForm();
+            menu.Show();
         }
     }
 }

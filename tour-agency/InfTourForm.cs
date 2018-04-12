@@ -18,7 +18,7 @@ namespace tour_agency
         public static string Lenaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\пк\Documents\Lena\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-        public string conString = Lenaconnection;
+        public string conString = Alexconnection;
 
         public void CreateCountry()
         {
@@ -241,6 +241,20 @@ namespace tour_agency
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menu = new MenuForm();
+            menu.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewTourForm tourForm = new NewTourForm();
+            tourForm.Show();
         }
     }
 }

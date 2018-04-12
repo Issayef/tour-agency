@@ -6,7 +6,7 @@ using System.IO;
 using Word = Microsoft.Office.Interop.Word;
 
 
-namespace Manager
+namespace tour_agency
 {
     public partial class Contract : Form
     {
@@ -180,6 +180,16 @@ namespace Manager
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menu = new MenuForm();
+            menu.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

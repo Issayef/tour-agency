@@ -1,4 +1,4 @@
-﻿namespace Manager
+﻿namespace tour_agency
 {
     partial class Contract
     {
@@ -91,6 +91,8 @@
             this.LastnameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,7 +102,7 @@
             this.label1.Location = new System.Drawing.Point(77, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 20);
+            this.label1.Size = new System.Drawing.Size(129, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Данные клиента";
             // 
@@ -111,7 +113,7 @@
             this.label2.Location = new System.Drawing.Point(403, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.Size = new System.Drawing.Size(103, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Данные тура";
             // 
@@ -121,7 +123,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(27, 131);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 20);
+            this.label4.Size = new System.Drawing.Size(107, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "Дата рождения";
             // 
@@ -131,7 +133,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(27, 101);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 20);
+            this.label5.Size = new System.Drawing.Size(71, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "Отчество";
             // 
@@ -141,7 +143,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.Location = new System.Drawing.Point(27, 281);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.Size = new System.Drawing.Size(56, 16);
             this.label7.TabIndex = 7;
             this.label7.Text = "Страна";
             // 
@@ -151,7 +153,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(27, 251);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 20);
+            this.label8.Size = new System.Drawing.Size(82, 16);
             this.label8.TabIndex = 8;
             this.label8.Text = "Код страны";
             // 
@@ -161,7 +163,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.Location = new System.Drawing.Point(27, 191);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 20);
+            this.label9.Size = new System.Drawing.Size(68, 16);
             this.label9.TabIndex = 9;
             this.label9.Text = "Телефон";
             // 
@@ -170,7 +172,7 @@
             this.BirthTextBox.Location = new System.Drawing.Point(156, 128);
             this.BirthTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.BirthTextBox.Name = "BirthTextBox";
-            this.BirthTextBox.Size = new System.Drawing.Size(148, 26);
+            this.BirthTextBox.Size = new System.Drawing.Size(148, 22);
             this.BirthTextBox.TabIndex = 10;
             // 
             // textBoxFIO
@@ -178,7 +180,7 @@
             this.textBoxFIO.Location = new System.Drawing.Point(156, 98);
             this.textBoxFIO.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFIO.Name = "textBoxFIO";
-            this.textBoxFIO.Size = new System.Drawing.Size(148, 26);
+            this.textBoxFIO.Size = new System.Drawing.Size(148, 22);
             this.textBoxFIO.TabIndex = 11;
             // 
             // textBoxCountryCode
@@ -186,7 +188,7 @@
             this.textBoxCountryCode.Location = new System.Drawing.Point(156, 248);
             this.textBoxCountryCode.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCountryCode.Name = "textBoxCountryCode";
-            this.textBoxCountryCode.Size = new System.Drawing.Size(148, 26);
+            this.textBoxCountryCode.Size = new System.Drawing.Size(148, 22);
             this.textBoxCountryCode.TabIndex = 13;
             // 
             // PassportNumberTextBox
@@ -194,7 +196,7 @@
             this.PassportNumberTextBox.Location = new System.Drawing.Point(156, 218);
             this.PassportNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PassportNumberTextBox.Name = "PassportNumberTextBox";
-            this.PassportNumberTextBox.Size = new System.Drawing.Size(148, 26);
+            this.PassportNumberTextBox.Size = new System.Drawing.Size(148, 22);
             this.PassportNumberTextBox.TabIndex = 14;
             // 
             // PhoneTextBox
@@ -202,7 +204,7 @@
             this.PhoneTextBox.Location = new System.Drawing.Point(156, 188);
             this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PhoneTextBox.Name = "PhoneTextBox";
-            this.PhoneTextBox.Size = new System.Drawing.Size(148, 26);
+            this.PhoneTextBox.Size = new System.Drawing.Size(148, 22);
             this.PhoneTextBox.TabIndex = 15;
             // 
             // SexTextBox
@@ -210,7 +212,7 @@
             this.SexTextBox.Location = new System.Drawing.Point(156, 158);
             this.SexTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.SexTextBox.Name = "SexTextBox";
-            this.SexTextBox.Size = new System.Drawing.Size(148, 26);
+            this.SexTextBox.Size = new System.Drawing.Size(148, 22);
             this.SexTextBox.TabIndex = 16;
             // 
             // label10
@@ -219,7 +221,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.Location = new System.Drawing.Point(27, 161);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 20);
+            this.label10.Size = new System.Drawing.Size(34, 16);
             this.label10.TabIndex = 17;
             this.label10.Text = "Пол";
             // 
@@ -229,7 +231,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.Location = new System.Drawing.Point(27, 221);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(148, 20);
+            this.label11.Size = new System.Drawing.Size(116, 16);
             this.label11.TabIndex = 18;
             this.label11.Text = "Номер паспорта";
             // 
@@ -239,7 +241,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.Location = new System.Drawing.Point(27, 371);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(136, 20);
+            this.label12.Size = new System.Drawing.Size(104, 16);
             this.label12.TabIndex = 19;
             this.label12.Text = "Срок действия";
             // 
@@ -249,7 +251,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.Location = new System.Drawing.Point(27, 341);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 20);
+            this.label13.Size = new System.Drawing.Size(77, 16);
             this.label13.TabIndex = 20;
             this.label13.Text = "Кем выдан";
             // 
@@ -259,7 +261,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.Location = new System.Drawing.Point(27, 311);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 20);
+            this.label14.Size = new System.Drawing.Size(92, 16);
             this.label14.TabIndex = 21;
             this.label14.Text = "Дата выдачи";
             // 
@@ -268,7 +270,7 @@
             this.KemVidanTextBox.Location = new System.Drawing.Point(156, 338);
             this.KemVidanTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.KemVidanTextBox.Name = "KemVidanTextBox";
-            this.KemVidanTextBox.Size = new System.Drawing.Size(148, 26);
+            this.KemVidanTextBox.Size = new System.Drawing.Size(148, 22);
             this.KemVidanTextBox.TabIndex = 22;
             // 
             // DataVidachyTextBox
@@ -276,7 +278,7 @@
             this.DataVidachyTextBox.Location = new System.Drawing.Point(156, 308);
             this.DataVidachyTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DataVidachyTextBox.Name = "DataVidachyTextBox";
-            this.DataVidachyTextBox.Size = new System.Drawing.Size(148, 26);
+            this.DataVidachyTextBox.Size = new System.Drawing.Size(148, 22);
             this.DataVidachyTextBox.TabIndex = 23;
             // 
             // CountryTextBox
@@ -284,7 +286,7 @@
             this.CountryTextBox.Location = new System.Drawing.Point(156, 278);
             this.CountryTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CountryTextBox.Name = "CountryTextBox";
-            this.CountryTextBox.Size = new System.Drawing.Size(148, 26);
+            this.CountryTextBox.Size = new System.Drawing.Size(148, 22);
             this.CountryTextBox.TabIndex = 24;
             // 
             // textBoxExpDate
@@ -292,7 +294,7 @@
             this.textBoxExpDate.Location = new System.Drawing.Point(156, 368);
             this.textBoxExpDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxExpDate.Name = "textBoxExpDate";
-            this.textBoxExpDate.Size = new System.Drawing.Size(148, 26);
+            this.textBoxExpDate.Size = new System.Drawing.Size(148, 22);
             this.textBoxExpDate.TabIndex = 25;
             // 
             // TourBeginTextBox
@@ -300,7 +302,7 @@
             this.TourBeginTextBox.Location = new System.Drawing.Point(513, 278);
             this.TourBeginTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TourBeginTextBox.Name = "TourBeginTextBox";
-            this.TourBeginTextBox.Size = new System.Drawing.Size(148, 26);
+            this.TourBeginTextBox.Size = new System.Drawing.Size(148, 22);
             this.TourBeginTextBox.TabIndex = 45;
             // 
             // TourEndTextBox
@@ -308,7 +310,7 @@
             this.TourEndTextBox.Location = new System.Drawing.Point(513, 308);
             this.TourEndTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TourEndTextBox.Name = "TourEndTextBox";
-            this.TourEndTextBox.Size = new System.Drawing.Size(148, 26);
+            this.TourEndTextBox.Size = new System.Drawing.Size(148, 22);
             this.TourEndTextBox.TabIndex = 44;
             // 
             // label15
@@ -317,7 +319,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label15.Location = new System.Drawing.Point(333, 311);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(189, 20);
+            this.label15.Size = new System.Drawing.Size(147, 16);
             this.label15.TabIndex = 43;
             this.label15.Text = "Дата окончания тура";
             // 
@@ -327,7 +329,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.Location = new System.Drawing.Point(333, 221);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(166, 20);
+            this.label16.Size = new System.Drawing.Size(128, 16);
             this.label16.TabIndex = 42;
             this.label16.Text = "Количество детей";
             // 
@@ -337,7 +339,7 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label17.Location = new System.Drawing.Point(333, 161);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(82, 20);
+            this.label17.Size = new System.Drawing.Size(65, 16);
             this.label17.TabIndex = 41;
             this.label17.Text = "Питание";
             // 
@@ -346,7 +348,7 @@
             this.FoodTextBox.Location = new System.Drawing.Point(513, 158);
             this.FoodTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.FoodTextBox.Name = "FoodTextBox";
-            this.FoodTextBox.Size = new System.Drawing.Size(148, 26);
+            this.FoodTextBox.Size = new System.Drawing.Size(148, 22);
             this.FoodTextBox.TabIndex = 40;
             // 
             // textBoxAdults
@@ -354,7 +356,7 @@
             this.textBoxAdults.Location = new System.Drawing.Point(513, 188);
             this.textBoxAdults.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAdults.Name = "textBoxAdults";
-            this.textBoxAdults.Size = new System.Drawing.Size(148, 26);
+            this.textBoxAdults.Size = new System.Drawing.Size(148, 22);
             this.textBoxAdults.TabIndex = 39;
             // 
             // textBoxChildren
@@ -362,7 +364,7 @@
             this.textBoxChildren.Location = new System.Drawing.Point(513, 218);
             this.textBoxChildren.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxChildren.Name = "textBoxChildren";
-            this.textBoxChildren.Size = new System.Drawing.Size(148, 26);
+            this.textBoxChildren.Size = new System.Drawing.Size(148, 22);
             this.textBoxChildren.TabIndex = 38;
             // 
             // CoastlineTextBox
@@ -370,7 +372,7 @@
             this.CoastlineTextBox.Location = new System.Drawing.Point(513, 248);
             this.CoastlineTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CoastlineTextBox.Name = "CoastlineTextBox";
-            this.CoastlineTextBox.Size = new System.Drawing.Size(148, 26);
+            this.CoastlineTextBox.Size = new System.Drawing.Size(148, 22);
             this.CoastlineTextBox.TabIndex = 37;
             // 
             // CityTextBox
@@ -378,7 +380,7 @@
             this.CityTextBox.Location = new System.Drawing.Point(513, 68);
             this.CityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CityTextBox.Name = "CityTextBox";
-            this.CityTextBox.Size = new System.Drawing.Size(148, 26);
+            this.CityTextBox.Size = new System.Drawing.Size(148, 22);
             this.CityTextBox.TabIndex = 36;
             // 
             // HotelTextBox
@@ -386,7 +388,7 @@
             this.HotelTextBox.Location = new System.Drawing.Point(513, 98);
             this.HotelTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.HotelTextBox.Name = "HotelTextBox";
-            this.HotelTextBox.Size = new System.Drawing.Size(148, 26);
+            this.HotelTextBox.Size = new System.Drawing.Size(148, 22);
             this.HotelTextBox.TabIndex = 35;
             // 
             // HotelStarTextBox
@@ -394,7 +396,7 @@
             this.HotelStarTextBox.Location = new System.Drawing.Point(513, 128);
             this.HotelStarTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.HotelStarTextBox.Name = "HotelStarTextBox";
-            this.HotelStarTextBox.Size = new System.Drawing.Size(148, 26);
+            this.HotelStarTextBox.Size = new System.Drawing.Size(148, 22);
             this.HotelStarTextBox.TabIndex = 34;
             // 
             // label18
@@ -403,7 +405,7 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label18.Location = new System.Drawing.Point(333, 191);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(192, 20);
+            this.label18.Size = new System.Drawing.Size(151, 16);
             this.label18.TabIndex = 33;
             this.label18.Text = "Количество взрослых";
             // 
@@ -413,7 +415,7 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label19.Location = new System.Drawing.Point(333, 251);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(154, 20);
+            this.label19.Size = new System.Drawing.Size(120, 16);
             this.label19.TabIndex = 32;
             this.label19.Text = "Береговая линия";
             // 
@@ -423,7 +425,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label20.Location = new System.Drawing.Point(333, 281);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(160, 20);
+            this.label20.Size = new System.Drawing.Size(125, 16);
             this.label20.TabIndex = 31;
             this.label20.Text = "Дата начала тура";
             // 
@@ -433,7 +435,7 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label21.Location = new System.Drawing.Point(333, 71);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(68, 20);
+            this.label21.Size = new System.Drawing.Size(55, 16);
             this.label21.TabIndex = 30;
             this.label21.Text = "Курорт";
             // 
@@ -443,7 +445,7 @@
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label22.Location = new System.Drawing.Point(333, 101);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(62, 20);
+            this.label22.Size = new System.Drawing.Size(48, 16);
             this.label22.TabIndex = 29;
             this.label22.Text = "Отель";
             // 
@@ -453,7 +455,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label23.Location = new System.Drawing.Point(333, 131);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(166, 20);
+            this.label23.Size = new System.Drawing.Size(127, 16);
             this.label23.TabIndex = 28;
             this.label23.Text = "Звездность отеля";
             // 
@@ -463,7 +465,7 @@
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label24.Location = new System.Drawing.Point(333, 41);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(71, 20);
+            this.label24.Size = new System.Drawing.Size(56, 16);
             this.label24.TabIndex = 27;
             this.label24.Text = "Страна";
             // 
@@ -472,7 +474,7 @@
             this.CountryTourTextBox.Location = new System.Drawing.Point(513, 38);
             this.CountryTourTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CountryTourTextBox.Name = "CountryTourTextBox";
-            this.CountryTourTextBox.Size = new System.Drawing.Size(148, 26);
+            this.CountryTourTextBox.Size = new System.Drawing.Size(148, 22);
             this.CountryTourTextBox.TabIndex = 26;
             // 
             // label25
@@ -482,7 +484,7 @@
             this.label25.Location = new System.Drawing.Point(403, 344);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(140, 20);
+            this.label25.Size = new System.Drawing.Size(112, 16);
             this.label25.TabIndex = 46;
             this.label25.Text = "Данные рейса";
             // 
@@ -492,7 +494,7 @@
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label26.Location = new System.Drawing.Point(333, 528);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(216, 20);
+            this.label26.Size = new System.Drawing.Size(166, 16);
             this.label26.TabIndex = 56;
             this.label26.Text = "Длительность перелета";
             // 
@@ -501,7 +503,7 @@
             this.TimeTravelTextBox.Location = new System.Drawing.Point(513, 525);
             this.TimeTravelTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TimeTravelTextBox.Name = "TimeTravelTextBox";
-            this.TimeTravelTextBox.Size = new System.Drawing.Size(148, 26);
+            this.TimeTravelTextBox.Size = new System.Drawing.Size(148, 22);
             this.TimeTravelTextBox.TabIndex = 55;
             // 
             // AirportArrTextBox
@@ -509,7 +511,7 @@
             this.AirportArrTextBox.Location = new System.Drawing.Point(513, 401);
             this.AirportArrTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.AirportArrTextBox.Name = "AirportArrTextBox";
-            this.AirportArrTextBox.Size = new System.Drawing.Size(148, 26);
+            this.AirportArrTextBox.Size = new System.Drawing.Size(148, 22);
             this.AirportArrTextBox.TabIndex = 54;
             // 
             // DateDepTextBox
@@ -517,7 +519,7 @@
             this.DateDepTextBox.Location = new System.Drawing.Point(513, 431);
             this.DateDepTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DateDepTextBox.Name = "DateDepTextBox";
-            this.DateDepTextBox.Size = new System.Drawing.Size(148, 26);
+            this.DateDepTextBox.Size = new System.Drawing.Size(148, 22);
             this.DateDepTextBox.TabIndex = 53;
             // 
             // TimeDepTextBox
@@ -525,7 +527,7 @@
             this.TimeDepTextBox.Location = new System.Drawing.Point(513, 461);
             this.TimeDepTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TimeDepTextBox.Name = "TimeDepTextBox";
-            this.TimeDepTextBox.Size = new System.Drawing.Size(148, 26);
+            this.TimeDepTextBox.Size = new System.Drawing.Size(148, 22);
             this.TimeDepTextBox.TabIndex = 52;
             // 
             // label27
@@ -534,7 +536,7 @@
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label27.Location = new System.Drawing.Point(333, 404);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(166, 20);
+            this.label27.Size = new System.Drawing.Size(130, 16);
             this.label27.TabIndex = 51;
             this.label27.Text = "Аэропорт прилёта";
             // 
@@ -544,7 +546,7 @@
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label28.Location = new System.Drawing.Point(333, 434);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(119, 20);
+            this.label28.Size = new System.Drawing.Size(91, 16);
             this.label28.TabIndex = 50;
             this.label28.Text = "Дата вылета";
             // 
@@ -554,7 +556,7 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label29.Location = new System.Drawing.Point(333, 464);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(130, 20);
+            this.label29.Size = new System.Drawing.Size(100, 16);
             this.label29.TabIndex = 49;
             this.label29.Text = "Время вылета";
             // 
@@ -564,7 +566,7 @@
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label30.Location = new System.Drawing.Point(333, 374);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(158, 20);
+            this.label30.Size = new System.Drawing.Size(123, 16);
             this.label30.TabIndex = 48;
             this.label30.Text = "Аэропорт вылета";
             // 
@@ -573,7 +575,7 @@
             this.AirportDepTextBox.Location = new System.Drawing.Point(513, 371);
             this.AirportDepTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.AirportDepTextBox.Name = "AirportDepTextBox";
-            this.AirportDepTextBox.Size = new System.Drawing.Size(148, 26);
+            this.AirportDepTextBox.Size = new System.Drawing.Size(148, 22);
             this.AirportDepTextBox.TabIndex = 47;
             // 
             // label31
@@ -583,7 +585,7 @@
             this.label31.Location = new System.Drawing.Point(27, 577);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(105, 20);
+            this.label31.Size = new System.Drawing.Size(84, 16);
             this.label31.TabIndex = 57;
             this.label31.Text = "Менеджер";
             // 
@@ -592,13 +594,13 @@
             this.ManagerTextBox.Location = new System.Drawing.Point(161, 574);
             this.ManagerTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ManagerTextBox.Name = "ManagerTextBox";
-            this.ManagerTextBox.Size = new System.Drawing.Size(148, 26);
+            this.ManagerTextBox.Size = new System.Drawing.Size(148, 22);
             this.ManagerTextBox.TabIndex = 58;
             // 
             // SaveWordButton
             // 
             this.SaveWordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveWordButton.Location = new System.Drawing.Point(370, 574);
+            this.SaveWordButton.Location = new System.Drawing.Point(336, 574);
             this.SaveWordButton.Name = "SaveWordButton";
             this.SaveWordButton.Size = new System.Drawing.Size(95, 23);
             this.SaveWordButton.TabIndex = 59;
@@ -609,7 +611,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(539, 574);
+            this.button2.Location = new System.Drawing.Point(437, 574);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 23);
             this.button2.TabIndex = 60;
@@ -621,7 +623,7 @@
             this.TimeArrTextBox.Location = new System.Drawing.Point(513, 495);
             this.TimeArrTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TimeArrTextBox.Name = "TimeArrTextBox";
-            this.TimeArrTextBox.Size = new System.Drawing.Size(148, 26);
+            this.TimeArrTextBox.Size = new System.Drawing.Size(148, 22);
             this.TimeArrTextBox.TabIndex = 62;
             // 
             // label32
@@ -630,7 +632,7 @@
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label32.Location = new System.Drawing.Point(333, 501);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(138, 20);
+            this.label32.Size = new System.Drawing.Size(107, 16);
             this.label32.TabIndex = 61;
             this.label32.Text = "Время прилета";
             // 
@@ -639,7 +641,7 @@
             this.FirstnameTextBox.Location = new System.Drawing.Point(156, 64);
             this.FirstnameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.FirstnameTextBox.Name = "FirstnameTextBox";
-            this.FirstnameTextBox.Size = new System.Drawing.Size(148, 26);
+            this.FirstnameTextBox.Size = new System.Drawing.Size(148, 22);
             this.FirstnameTextBox.TabIndex = 63;
             // 
             // LastnameTextBox
@@ -647,7 +649,7 @@
             this.LastnameTextBox.Location = new System.Drawing.Point(156, 30);
             this.LastnameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.LastnameTextBox.Name = "LastnameTextBox";
-            this.LastnameTextBox.Size = new System.Drawing.Size(148, 26);
+            this.LastnameTextBox.Size = new System.Drawing.Size(148, 22);
             this.LastnameTextBox.TabIndex = 64;
             // 
             // label3
@@ -656,7 +658,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(27, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.Size = new System.Drawing.Size(34, 16);
             this.label3.TabIndex = 65;
             this.label3.Text = "Имя";
             // 
@@ -666,15 +668,39 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(27, 33);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(67, 16);
             this.label6.TabIndex = 66;
             this.label6.Text = "Фамилия";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(558, 573);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 23);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "В меню";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(558, 602);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(103, 23);
+            this.button3.TabIndex = 68;
+            this.button3.Text = "Выход";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Contract
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 611);
+            this.ClientSize = new System.Drawing.Size(689, 626);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LastnameTextBox);
@@ -811,5 +837,7 @@
         private System.Windows.Forms.TextBox LastnameTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

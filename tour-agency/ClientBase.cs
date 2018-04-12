@@ -21,7 +21,7 @@ namespace tour_agency
         public static string Lenaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\пк\Documents\Lena\tour-agency\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
         public static string Svetaconnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Svetunya\Desktop\Светкина учеба\Проект_КомРПО\БД\TouristAgency.mdf;Integrated Security=True;Connect Timeout=30";
 
-        public static string conString = Lenaconnection;
+        public static string conString = Alexconnection;
 
         string connectionString = conString;
         string sql = "SELECT FIO, date_of_birth, phone, pasport_number FROM turist ORDER BY FIO";
@@ -85,6 +85,18 @@ namespace tour_agency
             {
                 dataGridView1.Rows.Remove(row);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menu = new MenuForm();
+            menu.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -45,6 +45,7 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.richTextBoxReview = new System.Windows.Forms.RichTextBox();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -217,7 +218,7 @@
             // buttonSave
             // 
             this.buttonSave.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.buttonSave.Location = new System.Drawing.Point(236, 353);
+            this.buttonSave.Location = new System.Drawing.Point(117, 353);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(83, 35);
             this.buttonSave.TabIndex = 15;
@@ -245,11 +246,23 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.button1.Location = new System.Drawing.Point(218, 353);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 35);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "В меню";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Review
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 406);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.richTextBoxReview);
             this.Controls.Add(this.buttonSave);
@@ -293,5 +306,6 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.RichTextBox richTextBoxReview;
         private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button button1;
     }
 }
